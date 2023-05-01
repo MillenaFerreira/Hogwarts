@@ -75,7 +75,42 @@ styles(){
         border-bottom-color: transparent;
         border-left-color: transparent;
     }
-    
+    @media (max-width: 999px) {
+        .house {
+            width: 130px;
+            height: 300px;
+        }
+        .name_house {
+            font-size: 1.3rem;
+        }
+        .img_house {
+            width: 100px;
+        }
+        .triangle_left{
+            border-width: 33px;
+        }
+        .triangle_right{
+            border-width: 32px;
+        }
+    }
+    @media (max-width: 600px) {
+        .house {
+            width: 100px;
+            height: 200px;
+        }
+        .name_house {
+            font-size: 1rem;
+        }
+        .img_house {
+            width: 80px;
+        }
+        .triangle_left{
+            border-width: 25px;
+        }
+        .triangle_right{
+            border-width: 25px;
+        }
+    }
     `
     return css
 }
