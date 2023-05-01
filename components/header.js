@@ -1,6 +1,6 @@
 'use strict'
 
-class card extends HTMLElement {
+class header extends HTMLElement {
     constructor() {
         super()
         this.shadow = this.attachShadow({ mode: 'open' })  
@@ -93,6 +93,7 @@ styles(){
         border: 0;
         color: #fff;
         font-family: 'Itim';
+        line-height: 24px;
         cursor: pointer;
     }
     
@@ -171,4 +172,4 @@ styles(){
 
 }
 
-customElements.define('header-hogwarts', card)
+customElements.define('header-hogwarts', header)
