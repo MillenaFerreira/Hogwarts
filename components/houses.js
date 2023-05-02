@@ -26,15 +26,20 @@ class card_house extends HTMLElement {
 styles(){
     const css = document.createElement('style')
     css.textContent = `
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     .house_box {
         cursor: pointer;
     }
-    
     .house {
         background-color: #000;
         display: grid;
         place-items: center;
-        width: 200px;
+        width: 190px;
         height: 400px;
         border-top: 10px;
         border-top-right-radius: 5px;
@@ -61,64 +66,44 @@ styles(){
         width: 0;
         height: 0;
         border: solid #000;
-        border-width: 50px;
+        border-width: 47px;
         border-bottom-color: transparent;
         border-right-color: transparent;
-    
     }
     
     .triangle_right {
         width: 0;
         height: 0;
         border: solid #000;
-        border-width: 50px;
+        border-width: 48px;
         border-bottom-color: transparent;
         border-left-color: transparent;
     }
-    @media (max-width: 999px) {
-        .house {
-            width: 130px;
-            height: 300px;
-        }
-        .name_house {
-            font-size: 1.3rem;
-        }
-        .img_house {
-            width: 100px;
-        }
-        .triangle_left{
-            border-width: 33px;
-        }
-        .triangle_right{
-            border-width: 32px;
-        }
-    }
     @media (max-width: 600px) {
         .house {
-            width: 100px;
-            height: 200px;
-        }
-        .name_house {
-            font-size: 1rem;
-        }
-        .img_house {
-            width: 80px;
+            width: 250px;
+            height: 400px;
         }
         .triangle_left{
-            border-width: 25px;
+            border-width: 62px;
         }
         .triangle_right{
-            border-width: 25px;
+            border-width: 63px;
         }
     }
+    
     `
     return css
 }
 
     component(){
         // Container Principal - container-header
-        const house_box = document.createElement('div')
+        const house_box = document.createElement('a')
         house_box.classList.add('house_box')
+        house_box.addEventListener('click', () => {
+            localStorage.setItem('name_house', house.textContent)
+        })
+        house_box.href = '../pages/characters.html'
 
         //dentro do house_box terá:
         const house = document.createElement('div')

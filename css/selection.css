@@ -11,7 +11,7 @@ body {
 main{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .explore_world {
@@ -32,17 +32,16 @@ main{
         height: 90%;
     }
     .container_houses {
-        padding: 0 5vh;
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-gap: 2vh;
+        padding: 0 2vh;
+        place-content: center;
     }
 }
 
 @media (max-width: 600px) {
     .explore_world {
         padding-top: 6vh;
-    }
-    .container_houses {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 4vh;
-        padding: 0 2vh;
     }
 }

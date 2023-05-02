@@ -39,11 +39,6 @@ styles(){
         font-size: 1rem;
         gap: 0.25rem;
     }
-    @media (max-width: 600px) {
-        .copyright{
-            font-size: 0.8rem;
-        }
-    }
     `
     return css
 }

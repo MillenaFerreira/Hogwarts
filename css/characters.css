@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/quarto-harry-potter-paleta-de-cores-grifin-ria\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 110px 1fr 50px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vh;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5vh;
+    place-items: center;
+}
+
+.card-character {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 230px;
+    height: 350px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Itim';
+    cursor: pointer;
+}
+
+.card-text {
+    display: none;
+    color: #fff;
+}
+
+.card-character:hover {
+    box-shadow: inset 5px 5px 200px black;
+}
+
+.card-character:hover .card-text {
+    display: block;
+}
+
+@media (max-width: 999px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4vh;
+    }
+
+    .card-character {
+        width: 150px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 4vh;
+    }
+    .card-character {
+        width: 200px;
+        height: 300px;
+    }
+}
