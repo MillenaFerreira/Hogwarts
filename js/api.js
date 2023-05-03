@@ -7,3 +7,12 @@ export const getSelectHouse = async (name_house) => {
 
     return dado
 }
+
+export const getSelectCharacter = async (id) => {
+    const url = `https://hp-api.onrender.com/api/character/${id}`
+    const response = await fetch(url)
+    const dado = await response.json()
+
+    return dado
+}
+

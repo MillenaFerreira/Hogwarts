@@ -18,7 +18,8 @@ if (name_house == 'Gryffindor') {
 }
 
 const createCard = (house) => {
-    const card = document.createElement('div')
+
+    const card = document.createElement('a')
     card.classList.add('card-character')
     if (house.image == '') {
         card.style.backgroundImage = 'url(../img/noImage.svg)'
@@ -27,7 +28,9 @@ const createCard = (house) => {
     }
     card.addEventListener('click', () => {
         localStorage.setItem('id', house.id)
+        console.log(house.id);
     })
+    card.href = '../pages/character.html'
 
     const text_card = document.createElement('p')
     text_card.classList.add('card-text')
