@@ -106,19 +106,19 @@ styles(){
     @media (max-width: 999px) {
         .container-header{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
         }
         .logo{
             width: 50%;
             height: 50%;
         }
-
+        
         .search{
             display: none;
         }
         .button_login {
-            display: none;
+            width: 80px;
+            font-size: 1rem;
         }
         .search_box {
             display: none;
