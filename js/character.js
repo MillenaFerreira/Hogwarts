@@ -6,9 +6,10 @@ const name_house = localStorage.getItem('name_house')
 const houses = await getSelectHouse(name_house)
 
 const personagem = localStorage.getItem('id')
-console.log(personagem);
+//console.log(personagem);
 const character = await getSelectCharacter(personagem)
-console.log(character);
+//console.log(character);
+
 
 
 const body = document.getElementById('body')
@@ -24,12 +25,16 @@ if (name_house == 'Gryffindor') {
 
 const createCard = (idClicado) => {
 
+    const card = document.createElement('div')
+    card.classList.add('card')
+    card.style.backgroundImage = `url(${idClicado.image})`
 
+    return card
 }
 
 const carregarCard = () => {
     const cards = document.getElementById('card')
-    const cardsJSON = houses.map(createCard)
+    const cardsJSON = character.map(createCard)
 
     cards.replaceChildren(...cardsJSON)
 }

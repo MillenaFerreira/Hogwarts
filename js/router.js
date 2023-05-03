@@ -1,9 +1,8 @@
 'use strict'
 
 const routes = {
-    '/character'         : '/pages/home.html',
-    '/description' : '/pages/description.html',
-    '/varinha'     : '/pages/varinha.html',
+    '/pages/description' : '/pages/description.html',
+    '/pages/varinha'     : '/pages/varinha.html',
 }
 
 const route = async() => {
