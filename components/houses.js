@@ -31,6 +31,10 @@ styles(){
         margin: 0;
         box-sizing: border-box;
     }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
 
     .house_box {
         cursor: pointer;

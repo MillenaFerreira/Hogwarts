@@ -37,6 +37,12 @@ styles(){
     .logo {
         display: flex;
         align-items: center;
+        width: auto;
+        height: auto;
+    }
+    .logo_img {
+        width: 90%;
+        height: 80%;
     }
     
     .search_login {
@@ -100,16 +106,19 @@ styles(){
     @media (max-width: 999px) {
         .container-header{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
         }
-        .logo_img {
-            width: 90%;
-            height: 80%;
+        .logo{
+            width: 50%;
+            height: 50%;
         }
-    
+
+        .search{
+            display: none;
+        }
         .button_login {
-            width: 80px;
-            font-size: 1rem;
+            display: none;
         }
         .search_box {
             display: none;

@@ -1,11 +1,11 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-image: url(../img/thumb-1920-1102284\ 3.png);
+    background-image: url(../img/bodyDark.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
-    grid-template-rows: 110px 1fr 50px;
+    grid-template-rows: 110px 1fr 100px;
 
 }
 main{

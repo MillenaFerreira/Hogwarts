@@ -36,7 +36,6 @@ styles(){
         align-items: center;
         color: #fff;
         font-family: 'Itim';
-        font-size: 1rem;
         gap: 0.25rem;
     }
     `
