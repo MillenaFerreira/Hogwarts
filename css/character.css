@@ -7,13 +7,15 @@ body {
     display: grid;
     grid-template-rows: 110px 1fr 1fr;
 }
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.card{
+
+.card {
     width: 250px;
     height: 350px;
     background-image: url();
@@ -21,7 +23,8 @@ main {
     background-size: cover;
 }
 
-.menu-container{
+.menu-container {
+    padding-top: 2vh;
     width: 100%;
     height: 100px;
     display: grid;
@@ -30,21 +33,32 @@ main {
     text-transform: uppercase;
     color: #fff;
 }
-.menu-container a {
+.description{
     height: 100%;
     width: 100%;
-    background-color: aqua;
+    background-color: #D9D9D9CC;
     display: grid;
     place-items: center;
     border: 2px solid black;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-#root{
+.varinha{
+    margin-top: 2vh;
+    height: 100%;
+    width: 100%;
+    background-color: #D9D9D999;
+    display: grid;
+    place-items: center;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#root {
     height: 100%;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100%;
     color: white;
@@ -52,9 +66,18 @@ main {
     place-items: center;
 }
 
-.container-amarelo{
-    background-color: rgb(0, 81, 255);
+ul {
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 77px;
 }
-.container-verde{
-    background-color: green;
+
+.container-amarelo {
+    background-color:  #D9D9D9CC;
+}
+
+.container-verde {
+    background-color: #D9D9D999;
 }

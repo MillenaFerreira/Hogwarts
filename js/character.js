@@ -8,7 +8,7 @@ const houses = await getSelectHouse(name_house)
 const personagem = localStorage.getItem('id')
 //console.log(personagem);
 const character = await getSelectCharacter(personagem)
-//console.log(character);
+console.log(character[0].name);
 
 
 
@@ -22,6 +22,10 @@ if (name_house == 'Gryffindor') {
 } else if (name_house == 'Slytherin') {
     body.style.backgroundImage = 'url(../img/house_slytherin.jpg)'
 }
+
+// const title = document.getElementById('title')
+// title. = character[0].name
+
 
 const createCard = (idClicado) => {
 
