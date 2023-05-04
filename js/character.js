@@ -8,7 +8,7 @@ const houses = await getSelectHouse(name_house)
 const personagem = localStorage.getItem('id')
 //console.log(personagem);
 const character = await getSelectCharacter(personagem)
-console.log(character[0].name);
+// console.log(character);
 
 
 
@@ -36,7 +36,7 @@ const createCard = (idClicado) => {
     return card
 }
 
-const carregarCard = () => {
+export const carregarCard = () => {
     const cards = document.getElementById('card')
     const cardsJSON = character.map(createCard)
 

@@ -1,8 +1,17 @@
 'use strict'
 
+import { carregarCardDescription } from "./description.js"
+import { carregarCardVarinha } from "./varinha.js"
+
 const routes = {
-    '/pages/description' : '/pages/description.html',
-    '/pages/varinha'     : '/pages/varinha.html',
+    '/description' : {
+                        html : '/pages/description.html',
+                        js : carregarCardDescription
+    },
+    '/varinha'     : {
+                        html : '/pages/varinha.html',
+                        js : carregarCardVarinha
+    },
 }
 
 const route = async() => {
@@ -16,12 +25,16 @@ const route = async() => {
     const path = window.location.pathname
 
     //pega a posição path que são alguma das paginas
-    const response = await fetch(routes[path])
+    const response = await fetch(routes[path].html)
     
     const html = await response.text()
 
     //
     document.getElementById('root').innerHTML = html
+
+    routes[path].js()
+
+    // console.log ()
 
 
 }
