@@ -8,7 +8,8 @@ body {
     grid-template-rows: 110px 1fr 100px;
 
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -26,11 +27,18 @@ main{
     padding: 0 10vh;
 }
 
+footer-hogwarts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 999px) {
     .explore_img {
         width: 90%;
         height: 90%;
     }
+
     .container_houses {
         display: grid;
         grid-template-columns: repeat(2, 300px);

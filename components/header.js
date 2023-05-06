@@ -70,6 +70,10 @@ styles(){
         justify-content: center;
         transition: 0.4s;
     }
+    .search_button img{
+        width: 25px;
+        height: 25px;
+    }
     
     
     .search:hover .search_text {
@@ -109,19 +113,24 @@ styles(){
             justify-content: space-between;
         }
         .logo{
-            width: 50%;
-            height: 50%;
+            width: 40%;
+            height: 40%;
         }
         
         .search{
             display: none;
         }
-        .button_login {
-            width: 80px;
-            font-size: 1rem;
-        }
         .search_box {
             display: none;
+        }
+        .login{
+            width: 200px;
+            height: 80px;
+        }
+        .button_login{
+            width: 100%;
+            height: 100%;
+            font-size: 2.5rem;
         }
     }
     `

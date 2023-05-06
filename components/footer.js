@@ -38,6 +38,11 @@ styles(){
         font-family: 'Itim';
         gap: 0.25rem;
     }
+    @media (max-width: 999px) {
+        .copyright{
+            font-size: 2rem;
+        }
+    }
     `
     return css
 }

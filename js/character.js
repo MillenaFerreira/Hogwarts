@@ -37,7 +37,7 @@ const createCard = (idClicado) => {
 }
 
 export const carregarCard = () => {
-    const cards = document.getElementById('card')
+    const cards = document.getElementById('card-character')
     const cardsJSON = character.map(createCard)
 
     cards.replaceChildren(...cardsJSON)
