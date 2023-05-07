@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), #00309D;
+}
+    .content-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem;
+    gap: 20px;
+}
+.sair a{
+    width: auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+}
+.sair p{
+    cursor: url(../img/raio.png), auto;
+}
+.sair i{
+    cursor: url(../img/raio.png), auto;
+}
+
+/* .voltar{
+    position: absolute;
+    font-size: 3rem;
+    color: #fff;
+    background-color: aqua;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: 10px;
+} */
+
+
+@media (max-width: 999px) {
+    .sair a{
+        font-size: 3rem;
+    }
+}
