@@ -104,7 +104,7 @@ styles(){
         color: #fff;
         font-family: 'Itim';
         line-height: 24px;
-        cursor: pointer;
+        cursor: url(../img/raio.png), auto;
     }
     
     @media (max-width: 999px) {

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/reset.css">
 
     <!-- JS -->
-    <!-- <script src="./js/index.js" defer type="module"></script> -->
+    <script src="./js/loader.js" defer type="module"></script>
 
     <!-- COMPONENTS -->
     <script src="./components/header.js"></script>
@@ -29,7 +29,13 @@
 </head>
 
 <body>
-   <header>
+    <div id="preloader">
+        <div class="carregar">
+            <img src="img/image 46.png" alt="Carregando...">
+            <p>Carregando...</p>
+        </div>
+      </div>
+   <header class="esconder">
     <div class="container-header">
         <div class="logo">
             <img class="logo_img" src="img/logo.svg" alt="logo">
@@ -49,7 +55,7 @@
         </div>
     </div> 
    </header>
-    <main>
+    <main class="esconder">
         <div class="explore_world">
             <img class="explore_img" src="./img/explore o mundo de hogwarts.svg" alt="">
         </div>
@@ -58,7 +64,7 @@
             <a class="characters" href="./pages/selection.html">Characters</a>
         </div>
     </main>
-    <footer>
+    <footer class="esconder">
         <p class="copyright">
             Desenvolvido por 
             <a href="https://github.com/MillenaFerreira">

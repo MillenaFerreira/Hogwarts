@@ -35,7 +35,7 @@ main {
     align-items: center;
     font-size: 2rem;
     font-family: 'Itim';
-    cursor: pointer;
+    cursor: url(../img/raio.png), auto;
 }
 
 .card-text {

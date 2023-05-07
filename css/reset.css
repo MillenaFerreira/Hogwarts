@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor: url(../img/varinha-magica.png), auto;
 }
 ul, ol, li {
     list-style: none;

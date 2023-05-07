@@ -37,7 +37,7 @@ styles(){
     }
 
     .house_box {
-        cursor: pointer;
+        cursor: url(../img/raio.png), auto;
     }
     .house {
         background-color: #000;
