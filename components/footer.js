@@ -4,7 +4,7 @@ class footer extends HTMLElement {
     constructor() {
         super()
         this.shadow = this.attachShadow({ mode: 'open' })   
-        this.text_copyright = 'Desenvolvido por'
+        this.text_copyright = 'Developed by'
         this.link_text = 'Millena Ferreira 💕'
         this.link = 'https://github.com/MillenaFerreira'
     }
