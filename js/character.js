@@ -31,9 +31,15 @@ const createCard = (idClicado) => {
 
     const card = document.createElement('div')
     card.classList.add('card')
-    card.style.backgroundImage = `url(${idClicado.image})`
+    
+    if (idClicado.image == '') {
+        card.style.backgroundImage = 'url(../img/noImage.svg)'
+    } else {
+        card.style.backgroundImage = `url(${idClicado.image})`
+    }
 
     return card
+
 }
 
 export const carregarCard = () => {

@@ -15,14 +15,25 @@ const createCard = (character) => {
     ul.classList.add('ul')
 
     const wood = document.createElement('li')
-    wood.textContent = `Wood: ${character.wand.wood}`
+    if (character.wand.wood == '' || character.wand.wood == null) {
+        wood.textContent = `Wood: unknown`
+    } else {
+        wood.textContent = `Wood: ${character.wand.wood}`
+    }
  
     const wand = document.createElement('li')
-    wand.textContent = `Core: ${character.wand.core}`
+    if (character.wand.core == '' || character.wand.core == null) {
+        wand.textContent = `Core: unknown`
+    } else {
+        wand.textContent = `Core: ${character.wand.core}`
+    }
 
     const length = document.createElement('li')
-    length.textContent = `Length: ${character.wand.length}`
-
+    if (character.wand.length == '' || character.wand.length == null) {
+        length.textContent = `Length: unknown`
+    } else {
+        length.textContent = `Length: ${character.wand.length}`
+    }
 
     ul.append(wood, wand, length)
 
